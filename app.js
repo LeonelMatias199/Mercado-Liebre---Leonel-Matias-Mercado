@@ -3,20 +3,20 @@ const app = express();
 const path = require('path')
 const port = process.env.PORT||3000
 
-app.listen(port, () => { console.log(`Servidor corriendo en http://localhost:${port}`)})
 
-app.use(express.static(path.join(__dirname, 'public')))
+
+app.use(express.static(path.join(__dirname, 'Public')))
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/home.html'))
+    res.sendFile(path.join(__dirname, 'Views/home.html'))
 });
 
 app.get('/register', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views/register.html'))
+    res.sendFile(path.join(__dirname, 'Views/register.html'))
 });
 
 app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views/login.html'))
+    res.sendFile(path.join(__dirname, 'Views/login.html'))
 });
 
-
+app.listen(port, () => { console.log(`Servidor corriendo en http://localhost:${port}`)})
