@@ -238,11 +238,16 @@ main {
 
 .botones button {
     width: 5rem;
-    background-color: #1259c3;
+    background-color: var(--green);
     color: white;
     font-weight: 900;
+    transition: color 1s;
+    border-radius: 10%;
 }
 
+.botones button:hover{
+    background-color: #0022AA;
+}
 
 /* Solo para tablet*/
 
@@ -398,6 +403,18 @@ main {
 
     .botones button {
         margin: 20px;
+    }
+
+    footer section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cuerpo-de-texto{
+        font-size: 15px;}
+
+    .cajaCopy {
+        padding: 0 0 2% 40%;
     }
 
 }

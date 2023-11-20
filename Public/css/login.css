@@ -286,4 +286,16 @@ form button {
         font-size: 1.1rem;
     }
 
+    footer section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cuerpo-de-texto{
+        font-size: 15px;}
+
+    .cajaCopy {
+        padding: 0 0 2% 40%;
+    }
+
 }
